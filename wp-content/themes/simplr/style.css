@@ -1,0 +1,347 @@
+/*
+THEME NAME: Vikua's Template (Modificación del Template Simplr)
+THEME URI: http://www.plaintxt.org/themes/simplr/
+DESCRIPTION: Plantilla Modificada para Vikua
+VERSION: 0.1
+AUTHOR: Domingo José Ilarreta para 4Geeks
+AUTHOR URI: http://www.webmetropoli.com/dilarreta
+TAGS: variable width, fixed width, one column, widgets, theme options, options page, white, orange, blue, microformats, hatom, hcard
+*/
+@font-face {
+	font-family: roboto;
+	src: url('roboto.ttf');
+}
+
+body {
+	font-family: 'roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #969696;
+	background: #F9F9F9;
+}
+
+.container-stretcher{
+	min-height: 600px;
+	overflow: hidden;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+header {
+	padding: 20px 0 40px 0;
+}
+
+b{
+	font-weight: bold;
+	color:#7D7D7D;
+}
+
+.social {
+	border: 1px solid #c8c8c8;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding: 10px;
+	box-shadow: inset 0px 0px 10px 1px #dadada;
+	width: 266px;
+}
+
+.social a img {
+	margin: 0 5px;
+}
+
+.social a img:hover {
+	opacity: 0.9;
+}
+
+.small-text div p {
+	margin: 20px 0;
+	font-size: 12px;
+	color: #969696;
+}
+
+.nav-tabs {
+	border-bottom: none;
+}
+
+.nav-tabs li a {
+	border: none;
+	background: transparent;
+	color: #c8c8c8;
+	font-weight: bold;
+	width: 148px;
+	text-align: center;
+	padding: 0;
+}
+
+.nav-tabs li a:hover {
+	border: none;
+	background: transparent;
+	color: #344c70;
+}
+
+.nav-tabs .active a {
+	border: none;
+	color: #344c70;
+}
+
+.nav-tabs .active a:hover {
+	border: none;
+	color: #344c70;
+}
+
+#sinapsis-a-1{
+	width: 225px;
+}
+
+#sinapsis-a-2{
+	width: 225px;
+}
+
+.tab-bottom {
+	width: 100%;
+	opacity: 0.2;
+}
+
+.tab-divider {
+	position: absolute;
+	margin-top: -18px;
+}
+
+.tab-text {
+	text-align: justify;
+}
+
+.tab-text span {
+	font-size: 14px;
+	font-weight: bolder;
+}
+
+.item img {
+	width: 130px;
+	height: 100px;
+	display: inline-block !important;
+	margin-bottom: 10px;
+}
+
+.prev-left {
+	position: absolute;
+	top: 35px;
+	left: 0px;
+}
+
+.prev-right {
+	position: absolute;
+	top: 35px;
+	right: 0px;
+}
+
+.small-text {
+	font-size: 10px;
+	text-align: justify;
+	color: #969696;
+}
+
+footer {
+	background-image: url('images/footer.png');
+	position: relative;
+	/*margin-top: 40px;*/
+	height: 98px;
+}
+
+.footer-border {
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+}
+
+.btn-footer {
+	width: 48px;
+	height: 50px;
+	padding-left: 24px;
+	padding-right: 24px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+.btn-footer.on {
+	background-image: url('images/btn-on.png');
+	background-repeat: no-repeat;
+	background-position: 0 43px;
+	background-size: 100%;
+}
+
+.btn-footer:hover {
+	background-image: url('images/sombra.png')
+}
+
+.description .nav-tabs li a {
+	border: none;
+	background: transparent;
+	color: #c8c8c8;
+	font-weight: bold;
+	width: 114px;
+	text-align: center;
+	padding: 0;
+}
+
+.description .nav-tabs .active a {
+	border: none;
+	color: #344c70;
+}
+
+.description .nav-tabs .active a:hover {
+	border: none;
+	color: #344c70;
+}
+
+.description .nav-tabs li a:hover {
+	border: none;
+	background: transparent;
+	color: #344c70;
+}
+
+.tab-text-2 {
+	text-align: justify;
+	font-size: 14px;
+}
+
+.tab-text-2 span {
+	font-size: 22px;
+}
+
+.description-img {
+	margin: 0 5px;
+}
+
+.pagination {
+	text-align: center;
+}
+
+.pagination a {
+	display: inline-block;
+	margin: 0 2px;
+	color: #d2d2d2;
+	font-weight: bold;
+}
+
+.pagination a:hover {
+	color: #30486d;
+}
+
+.pagination .active {
+	color: #30486d;
+}
+
+.modal-backdrop.fade.in {
+	background: transparent;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.out-focus-img {
+	width: 300px !important;
+	height: 257px !important;
+}
+
+.modal {
+	width: 370px;
+}
+
+.modal-body {
+	position: relative;
+	max-height: 500px;
+	padding: 15px;
+	overflow-y: none;
+}
+
+.swf-container{
+	width:825px;
+	margin: auto;
+}
+
+.tab-container{
+	max-height: 400px;
+	overflow: scroll;
+}
+
+#tec-intraf-1{
+	width: 150px;
+}
+#tec-intraf-2{
+	width: 150px;
+}
+#tec-intraf-3{
+	width: 150px;
+}
+#tec-intraf-4{
+	width: 150px;
+}
+
+.subview-image{
+	max-height: 400px;
+	max-width: 300px;
+}
+
+#sinapsis-1{
+	width: 120px;
+}
+#sinapsis-2{
+	width: 120px;
+}
+#sinapsis-3{
+	width: 120px;
+}
+#sinapsis-4{
+	width: 120px;
+}
+#sinapsis-5{
+	width: 120px;
+}
+#sinapsis-6{
+	width: 120px;
+}
+#sinapsis-7{
+	width: 62px;
+}
+#sinapsis-8{
+	width: 62px;
+}
+#sinapsis-9{
+	width: 62px;
+}
+#sinapsis-10{
+	width: 62px;
+}
+
+.span3 a img{
+	height: 70px;
+}
+
+.site-image-vikua{
+	width: 100%;
+	min-height: 400px;
+	background: url('images/vikua.png') no-repeat;
+	background-position: -60px 0px;
+	overflow: hidden;
+}
+
+#vikua-1{
+	width:135px;
+}
+#vikua-2{
+	width:135px;
+}
+#vikua-3{
+	width:135px;
+}
+#vikua-4{
+	width:135px;
+}
+#vikua-5{
+	width:135px;
+}
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<result>
+	<resource key="link_tower1Btn">sinapsis.html</resource>
+
+	<resource key="link_tower2Btn">its.html</resource>
+
+	<resource key="link_tower3Btn">vikua.html</resource>
+
+	<resource key="link_tower4Btn">casos-exito.html</resource>
+
+	<resource key="link_tower5Btn">http://maps.google.com</resource>
+
+	<resource key="link_tower6Btn">in-traffic.html</resource>
+
+	<resource key="link_tower7Btn">noticias.html</resource>
+
+	<resource key="link_tower8Btn">http://www.yahoo.com</resource>
+
+	<resource key="link_tower9Btn">tec-intraf.html</resource>
+	
+	<!-- END TOOLTIPS -->
+	<message>OK</message>
+	<error>0</error>
+	<!-- END TOOLTIPS -->
+</result>
