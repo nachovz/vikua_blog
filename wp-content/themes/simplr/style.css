@@ -344,4 +344,77 @@ footer {
 #vikua-5{
 	width:135px;
 }
+#noticias-title{
+	color: #c8c8c8;
+	font-weight: bold;
+	font-size:16px;
+	font-family: 'roboto',Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.entry-data{
 
+	display:inline-block;
+	float:left;
+	font-size:14px;
+	/*border:1px;
+	border-color:#999;
+	border-style: solid;
+	padding:30px;*/
+	width:400px;
+	padding-top:10px;
+	margin-top:15px;
+}
+
+.entry-image{
+	float:left;
+	display:inline-block;
+	/*border:1px;
+	border-color:#999;
+	border-style: solid;*/
+	padding:30px;
+
+}
+
+.entry{
+	margin-bottom:50px;
+	/*
+	border:1px;
+	border-color:#999;
+	border-style: solid;
+	padding-left:20px;
+	padding-right:20px;*/
+	overflow: auto;
+	
+}
+.entry-image-large{
+  	text-align: center;
+  	margin-top:20px;
+}
+.entry-content-large{
+	display: inline-block;
+  	margin-top:10px;
+  	text-align:justify;
+	font-size:17px;
+	width: auto;
+	
+	padding-left:75px;
+	padding-right:75px;
+}
+
+.entry-title{
+	margin-top:40px;
+	color: #275CA0;
+	font-size:35px;
+}
+
+.entry-details{
+	font-size:10px;
+}
+#primary{
+	font-size:10px;
+}
+.entry-footer{
+	margin-bottom:100px;
+}
+#respond{
+	padding-left:20px;
+}

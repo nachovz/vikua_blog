@@ -1,5 +1,6 @@
 <?php
 // Produces links for every page just below the header
+add_theme_support( 'post-thumbnails' ); 
 function simplr_globalnav() {
 	echo "<div id=\"globalnav\"><ul id=\"menu\">";
 	if ( !is_front_page() ) { ?><li class="page_item_home home-link"><a href="<?php bloginfo('home'); ?>/" title="<?php echo _wp_specialchars(get_bloginfo('name'), 1) ?>" rel="home"><?php _e('Home', 'plaintxtblog') ?></a></li><?php }

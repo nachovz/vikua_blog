@@ -83,32 +83,30 @@ foreach ( $comments as $comment )
 </div><!-- .comments -->
 
 <div id="primary" class="sidebar">
-	<ul>
-		<li class="entry-meta">
-			<h3><?php printf(__('<a href="%1$s" title="%2$s">Home</a> &gt; About This Post', 'simplr'), get_bloginfo('home'), _wp_specialchars(get_bloginfo('name'), 1) ) ?></h3>
-			<?php printf(__('<p>This was posted by <span class="vcard"><span class="fn n">%1$s</span></span> on <abbr class="published" title="%2$sT%3$s">%4$s at %5$s</abbr>. Bookmark the <a href="%6$s" title="Permalink to %7$s" rel="bookmark">permalink</a>.</p><p>Subscribe to the <a class="rss-linK" href="%8$s" title="Comments RSS for %7$s" rel="alternate" type="application/rss+xml">RSS feed</a> for all comments on this post.</p>', 'simplr'),
-			get_the_author(),
-			get_the_time('Y-m-d'),
-			get_the_time('H:i:sO'),
-			get_the_time('l, F jS, Y', false),
-			get_the_time(),
-			get_permalink(),
-			_wp_specialchars(get_the_title(), 'double'),
-			esc_url( get_post_comments_feed_link() ) ) ?>
-		</li>
-		<?php if ( !is_page() ) { ?>
-		<li id="categories" class="entry-category">
-			<h3><?php _e('Filed Under', 'simplr') ?></h3>
-			<ul>
-				<li><?php the_category('</li><li>') ?></li>
-			</ul>
-		</li>
-		<li id="tags" class="entry-category">
-			<h3><?php _e('Tagged', 'simplr') ?></h3>
-			<p><?php the_tags('<span>','</span> <span>','</span>') ?></p>
-		</li>
-		<?php } ?>
-	</ul>
+		
+			<!--<li class="entry-meta">-->
+				<h3>Comentarios</h3>
+				<?php printf(__('<p> Subscribirse al <a class="rss-linK" href="%2$s" title="Comments RSS for %1$s" rel="alternate" type="application/rss+xml">feed RSS</a> de los comentarios de esta noticia.</p>', 'simplr'),
+				
+				_wp_specialchars(get_the_title(), 'double'),
+				esc_url( get_post_comments_feed_link() ) ) ?>
+			<!--</li>-->
+			<?php if ( !is_page() ) { ?>
+		
+			<!--<li id="categories" class="entry-category">
+				<h3><?php _e('Filed Under', 'simplr') ?></h3>
+				<!--<ul>
+					
+						<?php the_category('</li><li>') ?>
+					
+				<!--</ul>
+			<!--</li>-->
+			<!--<li id="tags" class="entry-category">
+				<h3><?php _e('Tagged', 'simplr') ?></h3>
+				<p><?php the_tags('<span>','</span> <span>','</span>') ?></p>
+			
+			<?php } ?>-->
+		
 </div><!-- comments.php #primary .sidebar -->
 
 <div id="secondary" class="sidebar">
@@ -125,7 +123,7 @@ foreach ( $comments as $comment )
 <?php if ( 'open' == $post->comment_status ) : ?>
 	<ul>
 		<li>
-			<h3 id="respond"><?php _e('Post a Comment', 'simplr') ?></h3>
+			<h3 id="respond"><?php _e('Publicar un comentario', 'simplr') ?></h3>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 
@@ -139,7 +137,7 @@ foreach ( $comments as $comment )
 
 <?php if ( $user_ID ) : ?>
 
-					<p id="loggedin"><?php printf(__('Logged in as <a href="%1$s" title="View your profile" class="fn">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'simplr'),
+					<p id="loggedin"><?php printf(__('Sesion iniciada como, <a href="%1$s" title="View your profile" class="fn">%2$s</a>. <a href="%3$s" title="Log out of this account">¿Cerrar sesion?</a>', 'simplr'),
 						get_option('siteurl') . '/wp-admin/profile.php',
 						_wp_specialchars($user_identity, true),
 						get_option('siteurl') . '/wp-login.php?action=logout&amp;redirect_to=' . get_permalink() ) ?></p>
@@ -162,7 +160,7 @@ foreach ( $comments as $comment )
 					<div class="form-label"><label for="comment"><img src="<?php bloginfo('template_directory'); ?>/images/icon-comment.png" alt="<?php _e('Your comment', 'simplr') ?>" /></label></div>
 					<div class="form-textarea"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="6"></textarea></div>
 
-					<div class="form-submit"><input id="submit" name="submit" type="submit" value="<?php _e('Submit comment', 'simplr') ?>" tabindex="7" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></div>
+					<div class="form-submit"><input id="submit" name="submit" type="submit" value="<?php _e('Enviar comentario', 'simplr') ?>" tabindex="7" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></div>
 
 <?php do_action('comment_form', $post->ID); ?>
 
