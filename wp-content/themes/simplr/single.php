@@ -52,6 +52,7 @@
 		</div><!-- #content .hfeed -->
 	</div><!-- #container -->
 
-<?php get_footer() ?>
 
-<!--<?php comments_template(); ?>-->
+
+
+<?php get_footer() ?>
