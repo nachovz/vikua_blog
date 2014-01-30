@@ -5,9 +5,9 @@ Template Name: Noticias Vikua
 ?>
 <?php get_header() ?>
 <div>
-    
+	
 </div>
-    
+
 <div id="container">
 	<div id="content">
 		<div id="nav-below" class="navigation">
@@ -19,31 +19,31 @@ Template Name: Noticias Vikua
 </div>
 <div id="primary" class="sidebar">
 	<ul>
-	<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // Begin Widgets for Sidebar 1; displays widgets or default contents below ?>
-	<!--<h1 style="text-align:center;">Noticias <img class="subview-image" src="wp-content/themes/simplr/images/noticias.png"></h1>-->
-	<h1 style="text-align:center;margin-bottom:50px;">Noticias </h1>
-	<?php global $wpdb, $r; $r = new WP_Query("showposts=5"); if ($r->have_posts()) : // Custom recent posts for Simplr ?>
-			<!--<h2 id="noticias-title"><?php _e('Entradas Recientes', 'simplr') ?></h3>-->
-			<li id="simplr-recent-entries">
-				
-				<ul><?php while ($r->have_posts()) : $r->the_post(); ?>
-					<div class="entry">
-						<li class="hentry" onclick="location.href='<?php the_permalink() ?>';">
-							<div class="entry-image">
-								<?php the_post_thumbnail(array(300,300)); ?>
-							</div>
-							<div class="entry-data">
-								<span class="entry-title"><a href="<?php the_permalink() ?>" title="Continue reading <?php get_the_title(); the_title(); ?>" rel="bookmark"><?php get_the_title(); the_title(); ?></a></span><br>
-								<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php unset($previousday); printf(__('%1$s', 'simplr'), the_date('F jS, Y', false)) ?></abbr></span><br>
-								<span class="entry-summary"><?php the_content_rss('', TRUE, '', 50); ?></span><br>					
-								<!--<span class="entry-comments"><?php comments_popup_link(__('Sin Comentarios', 'simplr'), __('One Comentario', 'simplr'), __('% Comentarios', 'simplr')) ?></span>-->
-							</div>
-						</li>
-					</div>
-				<?php endwhile; ?>
+		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // Begin Widgets for Sidebar 1; displays widgets or default contents below ?>
+		<!--<h1 style="text-align:center;">Noticias <img class="subview-image" src="wp-content/themes/simplr/images/noticias.png"></h1>-->
+		<h1 style="text-align:center;margin-bottom:50px;">Noticias </h1>
+		<?php global $wpdb, $r; $r = new WP_Query("showposts=5"); if ($r->have_posts()) : // Custom recent posts for Simplr ?>
+		<!--<h2 id="noticias-title"><?php _e('Entradas Recientes', 'simplr') ?></h3>-->
+		<li id="simplr-recent-entries">
+			
+			<ul><?php while ($r->have_posts()) : $r->the_post(); ?>
+				<div class="entry">
+					<li class="hentry" onclick="location.href='<?php the_permalink() ?>';">
+						<div class="entry-image">
+							<?php the_post_thumbnail(array(300,300)); ?>
+						</div>
+						<div class="entry-data">
+							<span class="entry-title"><a href="<?php the_permalink() ?>" title="Continue reading <?php get_the_title(); the_title(); ?>" rel="bookmark"><?php get_the_title(); the_title(); ?></a></span><br>
+							<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php unset($previousday); printf(__('%1$s', 'simplr'), the_date('F jS, Y', false)) ?></abbr></span><br>
+							<span class="entry-summary"><?php the_content_rss('', TRUE, '', 50); ?></span><br>					
+							<!--<span class="entry-comments"><?php comments_popup_link(__('Sin Comentarios', 'simplr'), __('One Comentario', 'simplr'), __('% Comentarios', 'simplr')) ?></span>-->
+						</div>
+					</li>
+				</div>
+			<?php endwhile; ?>
 
-				</ul>
-			</li>
+		</ul>
+	</li>
 <?php endif; ?>
 
 <!--<?php global $wpdb, $comments, $comment; // Custom recent comments for Simplr
@@ -114,5 +114,6 @@ Template Name: Noticias Vikua
 
 		</ul>
 	</div><!-- #primary .sidebar -->
+</div>
 <?php get_sidebar() ?>
 <?php get_footer() ?>
