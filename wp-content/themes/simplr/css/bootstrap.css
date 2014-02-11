@@ -4244,6 +4244,10 @@ input[type="submit"].btn.btn-mini {
 
 .tab-content {
   overflow: auto;
+    background-color:#fff;
+  border-style:line;
+  border-width:1px;
+  border-style-top:none;
 }
 
 .tabs-below > .nav-tabs,
