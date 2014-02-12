@@ -46,7 +46,7 @@
 				</a>
 				
 				<a href="<?php bloginfo('url'); ?>/?page_id=78 ">
-					<div class="btn-footer">
+					<div class="btn-footer-second">
 						<img src="wp-content/themes/simplr/images/btn-off-8.png" onmouseover='this.src="wp-content/themes/simplr/images/btn-on-8.png"' onmouseout='this.src="wp-content/themes/simplr/images/btn-off-8.png"'>
 					</div>
 				</a>

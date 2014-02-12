@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div class="span12">
+	<div class="entry">
 		<div id="content" class="hfeed">
 		<?php the_post(); ?>
 
@@ -11,8 +11,8 @@
 					<div class="entry-title3"> <?php get_the_title(); the_title(); ?></div>
 					<div class="entry-date3"><?php unset($previousday); printf(__('%1$s', 'simplr'), the_date('j M Y', false)) ?></div>
 				</div>
-				<br>
-				<?php printf(__('<p class="entry-details">Publicado por: %1$s </p>'), get_the_author()) ?>
+				<br><br>
+				<?php printf(__('<p class="entry-details">Publicado por: %1$s </p>'), get_the_author()) ?><br><br>
 					<br>
 				
 					<?php the_content('<span class="entry-data3">'.__('Continued reading &gt;', 'simplr').'</span>'); ?>

@@ -16,8 +16,12 @@ Template Name: Noticias Vikua
 		</div>
 	<?php endwhile;?>
 	-->
-		<div class="span12 entry">
-			<div class="entry-image"><?php the_post_thumbnail(array(300,300)); ?></div><br><br>
+		<div class="entry">
+			<div class="entry-image">
+				<div class="entry-img">
+					<?php the_post_thumbnail(array(300,300)); ?>
+				</div>
+			</div><br><br>
 			<div class="entry-data">
 				<span class="entry-title"> <?php get_the_title(); the_title(); ?></span><br><br>
 				<span class="entry-summary"><?php the_content_rss('', TRUE, '', 50); ?></span><br><br>
@@ -25,7 +29,7 @@ Template Name: Noticias Vikua
 			</div>
 		</div>
 		<?php $r->the_post(); ?>
-		<div class="span12 entry">
+		<div class="entry">
 			<div class="entry-image2"><?php the_post_thumbnail(array(600,300)); ?></div>
 			<div class="entry-data2">
 				<div class="entry-title2"> <?php get_the_title(); the_title(); ?></div>
@@ -37,7 +41,7 @@ Template Name: Noticias Vikua
 			</div>
 		</div>
 		<?php $r->the_post(); ?>
-		<div class="span12 entry">
+		<div class="entry">
 			<div class="entry-data2">
 				
 				<div class="entry-title2"> <?php get_the_title(); the_title(); ?></div>
@@ -50,7 +54,7 @@ Template Name: Noticias Vikua
 			</div>
 		</div>
 		<?php $r->the_post(); ?>
-		<div class="span12 entry">
+		<div class="entry">
 			<div class="entry-data2">
 				
 				<div class="entry-title2"> <?php get_the_title(); the_title(); ?></div>
