@@ -16,7 +16,7 @@ Template Name: Noticias Vikua
 		</div>
 	<?php endwhile;?>
 	-->
-		<div class="entry">
+		<!-- <div class="entry">
 			<div class="entry-image">
 				<div class="entry-img">
 					<?php the_post_thumbnail(array(300,300)); ?>
@@ -27,8 +27,8 @@ Template Name: Noticias Vikua
 				<span class="entry-summary"><?php the_content_rss('', TRUE, '', 50); ?></span><br><br>
 				<a class="leer-mas" href="<?php the_permalink() ?>"> Leer más </a>					
 			</div>
-		</div>
-		<?php $r->the_post(); ?>
+		</div> -->
+		<!--<?php $r->the_post(); ?> -->
 		<div class="entry">
 			<div class="entry-image2"><?php the_post_thumbnail(array(600,300)); ?></div>
 			<div class="entry-data2">
@@ -40,6 +40,7 @@ Template Name: Noticias Vikua
 				<a class="leer-mas2" href="<?php the_permalink() ?>"> Leer más </a>					
 			</div>
 		</div>
+		<!--
 		<?php $r->the_post(); ?>
 		<div class="entry">
 			<div class="entry-data2">
@@ -64,7 +65,7 @@ Template Name: Noticias Vikua
 				<div class="entry-summary2"><?php the_content_rss('', TRUE, '', 20); ?></div><br><br>
 				<a class="leer-mas2" href="<?php the_permalink() ?>"> Leer más </a>					
 			</div>
-		</div>
+		</div>-->
 
 
 	<?php endif; ?>

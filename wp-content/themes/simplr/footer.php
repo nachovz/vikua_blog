@@ -1,6 +1,6 @@
         </div>
-	</div>
-		<footer>
+
+		<!-- <footer>
 			<div class="container" >
 				<a href="<?php bloginfo('url'); ?>">
 					<div class="btn-footer">
@@ -57,7 +57,7 @@
 					</div>
 				</a>
 			</div>
-		</footer>
+		</footer> -->
         <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.js"></script>
     	<script src="<?php bloginfo('stylesheet_directory'); ?>/js/bootstrap.js"></script>
 		<script type="text/javascript">
