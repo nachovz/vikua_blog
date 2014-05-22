@@ -83,6 +83,11 @@ Template Name: vikua
 					<img class="img-responsive" id="semaforo-4" src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_intrafic_verde.png"/>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-xs-1 col-lg-2">
+					<img class="img-responsive" id="carro-rojo" src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/carrorojo.png"/>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -170,6 +175,57 @@ Template Name: vikua
 			document.getElementById('ciudad-aeropuerto').src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/aeropuerto.png";
 		}
 	);
+	 $(document).ready(function(){
+	 	var x = 0;
+	 	document.getElementById("carro-rojo").className="img-responsive first";
+	 	setTimeout(function(){
+	 		document.getElementById("carro-rojo").className="img-responsive second";
+	 		setTimeout(function(){
+	 			document.getElementById("carro-rojo").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/carrorojo1.png";
+	 			document.getElementById("carro-rojo").className="img-responsive third";
+	 			setTimeout(function(){
+			 		document.getElementById("carro-rojo").className="img-responsive fourth";
+			 		document.getElementById("carro-rojo").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/carrorojo6.png";
+			 		setTimeout(function(){
+				 		document.getElementById("carro-rojo").className="img-responsive fifth";
+				 		document.getElementById("carro-rojo").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/carrorojo5.png";
+				 		setTimeout(function(){
+				 			document.getElementById("carro-rojo").className="img-responsive sixth";
+				 		},3000)
+				 	},3000);
+			 	},3000);
+	 		},5000);
+	 		
+		 	
+	 	// }, 10000)
+		}, 10000)
+
+
+
+		 	setInterval(function(){
+		 		if(x == 1){
+		 			x=0;
+		 			document.getElementById("semaforo-1").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo1_verde.png";
+		 			document.getElementById("semaforo-3").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_its_verde.png";
+		 			document.getElementById("semaforo-4").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_intrafic_verde.png";	
+		 			// document.getElementById("semaforo-4").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_intrafic_verde.png";
+		 		}
+		 		else{
+		 			x=1;
+		 			document.getElementById("semaforo-1").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo1_amarillo.png";
+		 			document.getElementById("semaforo-3").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_its_amarillo.png";
+		 			// document.getElementById("semaforo-4").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_intrafic_amarillo.png";
+		 			document.getElementById("semaforo-4").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_intrafic_amarillo.png";	
+		 			setTimeout(function(){
+		 				document.getElementById("semaforo-1").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo1_rojo.png";
+		 				document.getElementById("semaforo-3").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_its_rojo.png"; 
+		 				document.getElementById("semaforo-4").src="<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_intrafic_rojo.png";	
+		 				// document.getElementById("semaforo-4").src"<?php echo get_template_directory_uri(); ?>/images/ciudad_vikua/semaforo_intrafic_rojo.png";
+		 			}
+		 			,4000);
+		 		}
+		 	},10000)
+	 });
 	    
 </script>
 

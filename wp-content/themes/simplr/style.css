@@ -879,3 +879,34 @@ p{
 	margin-left:auto;
 	margin-right:auto;
 }
+#carro-rojo{
+	position:absolute;
+	top:30250%;
+	left:250%;
+	transition: all 6s;
+}
+#carro-rojo.first{
+	left:565%;
+}
+#carro-rojo.second{
+	left:600%;
+	transition: all 2s;
+}
+#carro-rojo.third{
+	left:600%;
+	top:29000%;
+	transition: all 2s;
+}
+#carro-rojo.fourth{
+	left:582%;
+	top:22000%;
+}
+#carro-rojo.fifth{
+	left:576%;
+	top:22000%;
+	transition: all 2s;
+}
+#carro-rojo.sixth{
+	left:486%;
+	top:15500%;
+}
